@@ -1,0 +1,19 @@
+body {
+    min-height: auto;
+}
+
+.jumbotron {
+    padding-top: 2rem;
+    background-color: #e2edff;
+}
+
+#project {
+    background-color: #e2edff;
+}
+section{
+    padding-top: 5rem;
+}
+
+.tahan{
+    background-color: blueviolet;
+}
