@@ -11,7 +11,9 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyeTJLoqs5axw2mvsYiFM
         //tampilkan  tombol loading DAN ALERT, hilangkan tombol kirim dan reset
         btnLoading.classList.toggle('d-none');
         btnKirim.classList.toggle('d-none');
-        myAlert.classList.toggle('d-none');
+        setTimeout(() => {
+          myAlert.classList.toggle('d-none');
+        }, 2000);
         btnReset.classList.toggle('d-none');
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then((response) => {
@@ -19,7 +21,9 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyeTJLoqs5axw2mvsYiFM
             //hilangkan  tombol loading DAN ALERT, tampilkan tombol kirim dan reset
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
-            myAlert.classList.toggle('d-none');
+            setTimeout(() => {
+              myAlert.classList.toggle('d-none');
+            }, 2000);
             btnReset.classList.toggle('d-none');
             //Reset Form
             form.reset();
